@@ -17,6 +17,48 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "newResult",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idPerson",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_COVIDresult",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_IPFScode",
+						"type": "string"
+					}
+				],
+				"name": "CovidTestResults",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "HealthCenter_contract",
 				"outputs": [
@@ -71,11 +113,11 @@
 	},
 	"sources": {
 		"WHO/who.sol": {
-			"keccak256": "0x8ed55d195510f3e3f94399dfa7ae668d36cc7003c2ea45972ca75472cc9316b6",
+			"keccak256": "0x1e20a43920212f8acb081535046882747245c5486b405eee0733078cda8db465",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6d57a1dc66c1434adbe74e28bce6610a49da7a0553afcfb90ebddaae097e5621",
-				"dweb:/ipfs/QmZrXi9JGWTiKaLugAz45mcVHMNqL5Fq5K36KM4ZTvG8uf"
+				"bzz-raw://8d733818867722019f3dbb19fdf4569cd135120261eb03edf72ebacc319846f3",
+				"dweb:/ipfs/QmWQv7x4ndLAaT6j8wjhy5SGFaxmxx64TqvTdNJMxHp3DP"
 			]
 		}
 	},

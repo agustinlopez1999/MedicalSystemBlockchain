@@ -70,4 +70,28 @@ contract ContractHealthCenter{
         contractAddress = address(this);
     }
 
+    //mapping to relate person hash with results struct
+    mapping (bytes32 => results) COVIDresults;
+
+    struct results{
+        bool diagnosis;
+        string IPFScode;
+    }
+
+    //events
+    event newResult(bool, string);
+
+    //modifier that allows only HealthCenter
+    modifier onlyHealthCenter(address _address){
+        require(_address == HealthCenter_contract,"You don't have permissions");
+        _;
+    }
+
+    //function to emit result of covid test
+    function CovidTestResults(string memory _idPerson, bool _COVIDresult, string memory _IPFScode) public onlyHealthCenter(msg.sender){
+        bytes32 hash_idPerson = keccak256(abi.encodePacked(_idPerson));
+        COVIDresults[hash_idPerson] = results(_COVIDresult,_IPFScode);
+        emit newResult(_COVIDresult,_IPFScode);
+    }
+
 }
