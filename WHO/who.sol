@@ -16,7 +16,11 @@ contract WHO_COVID{
     //array with addresses with valid health centers
     address[] public health_centers_addresses;
 
+    //array with the addresses that ask for access
+    address[] requests;
+
     //events
+    event accessRequest(address);
     event NewValidHealthCenter(address);
     event NewContract(address, address);
 
@@ -24,6 +28,17 @@ contract WHO_COVID{
     modifier onlyWHO(address _address){
         require(_address == WHO);
         _;
+    }
+
+    //function to request acccess into the medical system
+    function requestAccess() public{
+        requests.push(msg.sender);
+        emit accessRequest(msg.sender);
+    }
+
+    //function that shows request array
+    function showRequests() public view onlyWHO(msg.sender) returns(address[] memory){
+        return requests;
     }
 
     //function that validates new health centers

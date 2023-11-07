@@ -58,11 +58,11 @@
 	},
 	"sources": {
 		"WHO/who.sol": {
-			"keccak256": "0x81925be3b01a8f49d1cffc15d0e1314c408792f4cb33146f3d6aab899a185c24",
+			"keccak256": "0x2a60f8c2e41518749d74501233c60a589e7165def3caf85fdc84172a09ad1008",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://49853e5db04e61ab9a7d8dcefb5876fcaa8f817d9e932033e2caf35b1ddbe676",
-				"dweb:/ipfs/Qmdy2oFPSbJQ1fJ9F9kqEmWNJ3yotyRHir8y7VCXTBUH6V"
+				"bzz-raw://7e1716247590472c7c1837f99fc56e522a4f5bebf59bbd9d1fc73fb21c997b9d",
+				"dweb:/ipfs/QmXqMGerWnjUkfo3Gex6QGnfDgX1m8yfaJSf9Uhz69xzF7"
 			]
 		}
 	},
