@@ -194,11 +194,11 @@
 	},
 	"sources": {
 		"WHO/who.sol": {
-			"keccak256": "0x1e20a43920212f8acb081535046882747245c5486b405eee0733078cda8db465",
+			"keccak256": "0xba7ed0b8db7041270a16192ad9dcf0bc7d84f673647e7f855c09c9e6f36fe483",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8d733818867722019f3dbb19fdf4569cd135120261eb03edf72ebacc319846f3",
-				"dweb:/ipfs/QmWQv7x4ndLAaT6j8wjhy5SGFaxmxx64TqvTdNJMxHp3DP"
+				"bzz-raw://89c5c5e59219af4b4384eef147430037cda38e694faab1f67697993dfb9676f7",
+				"dweb:/ipfs/QmbGNoAm6rh8QDB6TLGedyyWMx8VtU38yECGoB3rcDdgMX"
 			]
 		}
 	},
