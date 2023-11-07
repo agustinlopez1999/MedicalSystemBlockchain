@@ -18,6 +18,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "HealthCenter_contract",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "contractAddress",
 				"outputs": [
 					{
@@ -58,11 +71,11 @@
 	},
 	"sources": {
 		"WHO/who.sol": {
-			"keccak256": "0x2a60f8c2e41518749d74501233c60a589e7165def3caf85fdc84172a09ad1008",
+			"keccak256": "0x8ed55d195510f3e3f94399dfa7ae668d36cc7003c2ea45972ca75472cc9316b6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7e1716247590472c7c1837f99fc56e522a4f5bebf59bbd9d1fc73fb21c997b9d",
-				"dweb:/ipfs/QmXqMGerWnjUkfo3Gex6QGnfDgX1m8yfaJSf9Uhz69xzF7"
+				"bzz-raw://6d57a1dc66c1434adbe74e28bce6610a49da7a0553afcfb90ebddaae097e5621",
+				"dweb:/ipfs/QmZrXi9JGWTiKaLugAz45mcVHMNqL5Fq5K36KM4ZTvG8uf"
 			]
 		}
 	},

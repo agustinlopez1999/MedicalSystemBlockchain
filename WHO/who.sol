@@ -11,7 +11,10 @@ contract WHO_COVID{
     }
 
     //mapping to relate valid health centers
-    mapping(address => bool) validity_HealthCenters;
+    mapping(address => bool) public validity_HealthCenters;
+
+    //mapping to relate Health Center address with his contract
+    mapping(address => address) public HealthCenter_Contract;
 
     //array with addresses with valid health centers
     address[] public health_centers_addresses;
@@ -52,14 +55,19 @@ contract WHO_COVID{
         require(validity_HealthCenters[msg.sender] == true,"You don't have permissions");
         address HealthCenter_contract = address(new ContractHealthCenter(msg.sender));
         health_centers_addresses.push(HealthCenter_contract);
+        HealthCenter_Contract[msg.sender] = HealthCenter_contract;
         emit NewContract(HealthCenter_contract,msg.sender);
     }
 }
 
 contract ContractHealthCenter{
+
+    address public HealthCenter_contract;
     address public contractAddress;
+
     constructor(address _address){
-        contractAddress = _address;
+        HealthCenter_contract = _address;
+        contractAddress = address(this);
     }
 
 }
