@@ -1,0 +1,135 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "NewContract",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "NewValidHealthCenter",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "FactoryHealthCenter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_healthCenter",
+						"type": "address"
+					}
+				],
+				"name": "HealthCenter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "WHO",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "health_centers_addresses",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"WHO/who.sol": "WHO_COVID"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"WHO/who.sol": {
+			"keccak256": "0x81925be3b01a8f49d1cffc15d0e1314c408792f4cb33146f3d6aab899a185c24",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49853e5db04e61ab9a7d8dcefb5876fcaa8f817d9e932033e2caf35b1ddbe676",
+				"dweb:/ipfs/Qmdy2oFPSbJQ1fJ9F9kqEmWNJ3yotyRHir8y7VCXTBUH6V"
+			]
+		}
+	},
+	"version": 1
+}
